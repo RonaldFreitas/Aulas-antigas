@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Java Script</title>
+
+		<script type="text/javascript">
+
+			/*
+			//sempre colocar .getmonth + 1 porque ele da de (0 a 11) e nao de 1 a 12
+
+			var data = new Date()
+
+			//document.write(data.getDate() +  "/" + (data.getMonth() + 1) +  "/" + data.getFullYear())
+			// 10 / 10 / 2022
+
+			//adicionar / remover dias
+			document.write(data.toString())
+			data.setDate(data.getDate() + 720)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /> <br /> <br /> <br />')
+
+			//adicionar / remover meses
+			document.write(data.toString())
+			data.setMonth(data.getMonth() + 1)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /> <br /> <br /> <br />')
+
+			//adicionar / remover anos
+			document.write(data.toString())
+			data.setFullYear(data.getFullYear() + 4)
+			document.write('<hr />')
+			document.write(data.toString())
+
+			*/
+
+			//date(year, month, day, hours, minutes, seconds, milliseconds)
+
+			//0 porque vai de 0 a 11 nâo de 1 a 12
+
+			// 15/01/2022
+			var data1 = new Date(2022, 0, 15)
+
+			// 23/02/2022
+			var data2 = new Date(2022, 1, 23)
+
+			document.write(data1.toString())
+			document.write('<hr />')
+			document.write(data2.toString())
+
+			document.write('<br /> <br /> <hr />')
+
+			//converter datas para algo que possamos calcular
+
+			document.write(data1.getTime())
+			document.write('<hr />')
+			document.write(data2.getTime())
+
+			//base do getTime = 1 de janeiro de 1970
+
+			document.write('<br /> <br /> <hr />')
+
+			//encontrar a quantidade de milisegundos entre data1 e data2
+			var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+			document.write(milisegundos_entre_datas)
+
+			//o dia tem 24 horas
+			//cada hora tem 60 minutos
+			//cada minuto tem 60 segundos
+			//cada segundo tem 1000 milisegundos
+			//entâo quantos milisegundos existem em um dia?
+
+			var milisegundos_por_dia = (1*24*60*60*1000)
+			document.write('1 dia tem: ' + milisegundos_por_dia + 'milisegundos')
+
+			document.write('<br /> <br /> <hr />')
+			document.write('a diferença em dias entre as datas 1 e 2 é de ' + Math.ceil(milisegundos_entre_datas / milisegundos_por_dia) + ' dia(s)')
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+</html>

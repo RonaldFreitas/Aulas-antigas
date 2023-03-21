@@ -1,0 +1,24 @@
+#fundo {
+	background-color: skyblue;
+}
+
+#principal {
+	border: 0px solid;
+	width: 870px;
+	padding: 15px;
+}
+
+.fonte {
+	background: cyan;
+	font: arial,sans-serif;
+	padding: 18px;
+	width: 870px;
+}
+
+a {
+	padding: 5px;
+}
+
+p {
+	background: lightcyan;
+}

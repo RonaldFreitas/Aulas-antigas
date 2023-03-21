@@ -1,0 +1,27 @@
+.conteudo {
+	background: cyan;
+	border: 1px solid red;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+
+/*.conteudo1 {
+	background: cyan;
+	border: 1px solid red;
+	width: 200px;
+	height: 200px;
+	float: left;
+	float: right;
+	float: none;
+}*/
+
+.clear {
+	clear: both;
+}
+
+#principal {
+	border: 5px solid green;
+	background: gray;
+}

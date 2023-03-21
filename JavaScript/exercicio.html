@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Java Script</title>
+
+		<script type="text/javascript">
+
+			var NumeroPrimario = prompt('Digite o primeiro número aqui:')
+			var Operacoes = prompt('Escolha a operação de soma ou subtração, e digite "+" ou "-":')
+			var NumeroSecundario = prompt('Digite o segundo número aqui:')
+
+			var soma = '+'
+			var subtracao = '-'
+
+			if (Operacoes == soma || Operacoes == subtracao) {
+				document.write('Cálculo' + '(' + NumeroPrimario + ',' + NumeroSecundario + ',' + Operacoes + ')')
+			} else {
+				document.write('Insira os dados corretamente.')
+			}
+
+				var resultadoSoma = parseFloat(NumeroPrimario) + parseFloat(NumeroSecundario)
+				var resultadoSubtracao = parseFloat(NumeroPrimario) - parseFloat(NumeroSecundario)
+
+			document.write("<br/><br/><br/>")
+
+			if (Operacoes == soma) {
+				document.write('Resultado é: ' + resultadoSoma)
+			}
+			if (Operacoes == subtracao) {
+				document.write('Resultado é: ' + resultadoSubtracao)
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+	</body>
+</html>

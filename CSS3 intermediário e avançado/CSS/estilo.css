@@ -1,0 +1,239 @@
+/**********************************
+Seletor universal 
+* {
+	border: 1px solid blue;
+} */
+
+/**********************************
+Seletor de texto 
+h1 {
+	color: green;
+} */
+
+/**********************************
+Seletor de classe */
+
+/*.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+} */
+
+/**********************************
+Seletor de ID 
+#cabecalho {
+	border: 1px blue solid;
+} */
+
+/**********************************
+Seletor de filho 
+li>a{
+	color: red;
+	text-decoration: none;
+} */
+
+/**********************************
+Seletor de descendente 
+p a {
+	color: green;
+} */
+
+/**********************************
+Seletor de irmão adjacente 
+h1+p {
+	color: red;
+} */
+
+/**********************************
+Seletor de irmão geral 
+h1~p {
+	color: pink;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+Herança e especificidade */
+/*body {
+	color: red;
+} */
+
+/*p {
+	color: blue !important;
+}
+
+p {
+	color: red;
+} */
+
+/* Se um seletor for mais específico que o outro
+a regra mais especifica será aplicada
+(tera precedência sobre regras mais gerais)
+
+* {
+	color: red;
+}
+
+h2 {
+	color: blue;
+}
+
+h2.verde {
+	color: green;
+}
+
+h2#amarelo {
+	color: yellow;
+} */
+
+
+
+
+
+/**********************************
+Barra de navegação vertical
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	padding: 5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center;
+}
+
+
+
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+ul a {
+	border: 1px solid red;
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover, /*.selecionado a*/ /* {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+*/
+
+
+/*********************************
+Barra de navegação horizontal 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 720px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+ul li {
+	float: left;
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+    /*border-left: 1px solid gray;*/ /*
+    background: url(../imagens/divisor.png) repeat-y top left;    
+}
+
+ul .primeiro a {
+	background: none;
+}
+
+ul a:hover {
+	color: #085662;
+	background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+	color: #085662;
+	background: #44cade;
+} */
+
+
+/**************************************
+Barra de navegação com abas */
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width:  720px;
+}
+
+ul li {
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+	color: white;
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagens/aba-esquerda.png) no-repeat left top;
+}
+
+li a:hover {
+	color: #894a1f;
+}
+
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat right top;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat left top;
+}
+
+
+
+
+
+
+
